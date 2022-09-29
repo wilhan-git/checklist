@@ -1,0 +1,19 @@
+body{
+    padding: 0%;
+    background-color: brown;
+
+}
+
+
+.buscar{
+   position: relative;
+   color: red;
+   padding: 10px;
+   margin-top: 120px;
+   margin-bottom: 100px;
+}
+
+.banner{
+    position: relative;
+    border-radius: 10%;
+}
