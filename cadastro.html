@@ -47,6 +47,8 @@
         <input type="text" id="responsavel" placeholder="EX: Jorge Manoel">
     </div>
 
+
+    <!--Seleciona o Setor analisado-->
     <div class="col-md-5 mx-auto m-5" id="seletor">
         <select class="form-select" aria-label="Default select example">
             <option selected>SETOR</option>
@@ -61,8 +63,33 @@
           </select>
     </div>
 
+    
+  
     <div class="d-grid gap-2 col-6 mx-auto">
         <button class="btn btn-primary" type="button">Proximo</button>
       </div>
+
+<!--Recebe se possui equipamentos compartilhados-->
+      <div>
+        <label for="Pergunta">
+            O SETOR POSSUI EQUIPAMENTOS 
+COMPARTILHADOS EX: IMPRESSORA LASER, SCANER ?
+        </label>
+      </div>
+      <div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="Sim" id="possui">
+            <label class="form-check-label" for="flexRadioDefault1">
+               Possui
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="nao" id="nao_possui" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Não Possui
+            </label>
+          </div>
+    </div>
+
 </body>
 </html>
