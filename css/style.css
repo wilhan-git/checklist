@@ -17,3 +17,13 @@ body{
     position: relative;
     border-radius: 10%;
 }
+
+.vstack {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-self: stretch;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
