@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/checklist/js/script.js">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <title>Formulario MS</title>
+</head>
+
+<body>
+
+    <!-- Barra de navegação responsiva   -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-light" id="navegacao">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">HOME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/checklist/cadastro.html">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">lista</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="nome-colaborador col-6">
+        <label for="nomeCola">Nome: </label></br>
+        <input type="text" name="nomeColaborador" id="colaborador"></br>
+
+    </div></br>
+
+    <div class="form-checklist">
+        <div class="container">
+            <div>
+                <label>MONITOR </label></br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsMoniD" id="monitorDef"
+                        value="optionMonitor1">
+                    <label class="form-check-label" for="monitorDef">DEFEITO</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsMoniF" id="monitorFun"
+                        value="optionMonitor2">
+                    <label class="form-check-label" for="monitorFun">Funcionando</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsMoniN" id="monitorNpossui"
+                        value="optionMonitor3" checked>
+                    <label class="form-check-label" for="monitorNpossui">NÃO POSSUI</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="monitorQuanti"> QUANTIDADE</label>
+                    <input class="form" type="number" name="inlineRadioOptionsMoniQ" id="monitorQuanti"
+                        value="optionMonitor4" disabled>
+
+                </div>
+            </div> </br>
+
+            <div>
+                <label>CPU </label></br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsCPUd" id="cpuDef" value="cpuD">
+                    <label class="form-check-label" for="cpuDef">DEFEITO</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsCPUf" id="cpuFun" value="cpuF">
+                    <label class="form-check-label" for="cpuFun">Funcionando</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsCPUn" id="cpuNpossui"
+                        value="cpuN" checked>
+                    <label class="form-check-label" for="cpuNpossui">NÃO POSSUI</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="cpuQuanti"> QUANTIDADE</label>
+                    <input class="form" type="number" name="inlineRadioOptionsCPUq" id="cpuQuanti" value="cpuQ"
+                        disabled>
+
+                </div>
+            </div> </br>
+
+            <div>
+                <label>NOTEBOOK </label></br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsNotD" id="notebookDef"
+                        value="notebookDef">
+                    <label class="form-check-label" for="notebookDef">DEFEITO</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsNotF" id="notebookFun"
+                        value="notebookFun">
+                    <label class="form-check-label" for="notebookFun">Funcionando</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsNotN" id="notebookNpossui"
+                        value="notebookNpossui" checked>
+                    <label class="form-check-label" for="notebookNpossui">NÃO POSSUI</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="notebookQuanti"> QUANTIDADE</label>
+                    <input class="form" type="number" name="inlineRadioOptionsNotQ" id="notebookQuanti"
+                        value="notebookQuanti" disabled>
+
+                </div>
+            </div></br>
+
+            <div>
+                <label>PERIFERICOS</label></br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsPerD" id="periferDef"
+                        value="perD">
+                    <label class="form-check-label" for="periferDef">DEFEITO</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsPerF" id="periferFun"
+                        value="perF">
+                    <label class="form-check-label" for="periferFun">Funcionando</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsPerN" id="periferNpossui"
+                        value="perN" checked>
+                    <label class="form-check-label" for="periferNpossui">NÃO POSSUI</label>
+                </div>
+
+            </div></br>
+
+            <div>
+                <label>RAMAL MESA </label></br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsRamD" id="ramalDef"
+                        value="ramalD">
+                    <label class="form-check-label" for="ramalDef">DEFEITO</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsRamF" id="ramalFun"
+                        value="ramalF">
+                    <label class="form-check-label" for="ramalFun">Funcionando</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsRamN" id="ramalNpossui"
+                        value="ramalN" checked>
+                    <label class="form-check-label" for="ramalNpossui">NÃO POSSUI</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="ramalQuanti"> QUANTIDADE</label>
+                    <input class="form" type="number" name="inlineRadioOptionsRamQ" id="ramalQuanti" value="ramalQ"
+                        disabled>
+
+                </div>
+            </div></br>
+
+            <div>
+                <label>SUPORTE P/ CPU </label></br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsSupD" id="suporteDEf"
+                        value="suporD">
+                    <label class="form-check-label" for="suporteDef">DEFEITO</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsSupF" id="suporteFun"
+                        value="suporF">
+                    <label class="form-check-label" for="suporteFun">Funcionando</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsSupN" id="suporteNpossui"
+                        value="suporN" checked>
+                    <label class="form-check-label" for="suporteNpossui">NÃO POSSUI</label>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
