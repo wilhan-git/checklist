@@ -45,155 +45,158 @@
         </div>
     </nav>
 
+    <form action="enviar()" method="post">
+        <div class="nome-colaborador col-6">
+            <label for="nomeCola">Nome: </label></br>
+            <input type="text" name="nomeColaborador" id="colaborador"></br>
 
-    <div class="nome-colaborador col-6">
-        <label for="nomeCola">Nome: </label></br>
-        <input type="text" name="nomeColaborador" id="colaborador"></br>
+        </div></br>
 
-    </div></br>
+        <div class="form-checklist">
+            <div class="container">
+                <div>
+                    <label>MONITOR </label></br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptionsMoniD" id="monitorDef"
+                            value="optionMonitor1">
+                        <label class="form-check-label" for="monitorDef">DEFEITO</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptionsMoniF" id="monitorFun"
+                            value="optionMonitor2">
+                        <label class="form-check-label" for="monitorFun">Funcionando</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptionsMoniN" id="monitorNpossui"
+                            value="optionMonitor3" checked>
+                        <label class="form-check-label" for="monitorNpossui">NÃO POSSUI</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="monitorQuanti"> QUANTIDADE</label>
+                        <input class="form" type="number" name="inlineRadioOptionsMoniQ" id="monitorQuanti"
+                            value="optionMonitor4" disabled>
 
-    <div class="form-checklist">
-        <div class="container">
-            <div>
-                <label>MONITOR </label></br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptionsMoniD" id="monitorDef"
-                        value="optionMonitor1">
-                    <label class="form-check-label" for="monitorDef">DEFEITO</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptionsMoniF" id="monitorFun"
-                        value="optionMonitor2">
-                    <label class="form-check-label" for="monitorFun">Funcionando</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptionsMoniN" id="monitorNpossui"
-                        value="optionMonitor3" checked>
-                    <label class="form-check-label" for="monitorNpossui">NÃO POSSUI</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label" for="monitorQuanti"> QUANTIDADE</label>
-                    <input class="form" type="number" name="inlineRadioOptionsMoniQ" id="monitorQuanti"
-                        value="optionMonitor4" disabled>
+                    </div>
+                </div> </br>
+
+                <div>
+                    <label>CPU </label></br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptionsCPUd" id="cpuDef"
+                            value="cpuD">
+                        <label class="form-check-label" for="cpuDef">DEFEITO</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptionsCPUf" id="cpuFun"
+                            value="cpuF">
+                        <label class="form-check-label" for="cpuFun">Funcionando</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptionsCPUn" id="cpuNpossui"
+                            value="cpuN" checked>
+                        <label class="form-check-label" for="cpuNpossui">NÃO POSSUI</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="cpuQuanti"> QUANTIDADE</label>
+                        <input class="form" type="number" name="inlineRadioOptionsCPUq" id="cpuQuanti" value="cpuQ"
+                            disabled>
+
+                    </div>
+                </div> </br>
+
+                <div>
+                    <label>NOTEBOOK </label></br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptionsNotD" id="notebookDef"
+                            value="notebookDef">
+                        <label class="form-check-label" for="notebookDef">DEFEITO</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptionsNotF" id="notebookFun"
+                            value="notebookFun">
+                        <label class="form-check-label" for="notebookFun">Funcionando</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptionsNotN" id="notebookNpossui"
+                            value="notebookNpossui" checked>
+                        <label class="form-check-label" for="notebookNpossui">NÃO POSSUI</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="notebookQuanti"> QUANTIDADE</label>
+                        <input class="form" type="number" name="inlineRadioOptionsNotQ" id="notebookQuanti"
+                            value="notebookQuanti" disabled>
+
+                    </div>
+                </div></br>
+
+                <div>
+                    <label>PERIFERICOS</label></br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptionsPerD" id="periferDef"
+                            value="perD">
+                        <label class="form-check-label" for="periferDef">DEFEITO</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptionsPerF" id="periferFun"
+                            value="perF">
+                        <label class="form-check-label" for="periferFun">Funcionando</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptionsPerN" id="periferNpossui"
+                            value="perN" checked>
+                        <label class="form-check-label" for="periferNpossui">NÃO POSSUI</label>
+                    </div>
+
+                </div></br>
+
+                <div>
+                    <label>RAMAL MESA </label></br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptionsRamD" id="ramalDef"
+                            value="ramalD">
+                        <label class="form-check-label" for="ramalDef">DEFEITO</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptionsRamF" id="ramalFun"
+                            value="ramalF">
+                        <label class="form-check-label" for="ramalFun">Funcionando</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptionsRamN" id="ramalNpossui"
+                            value="ramalN" checked>
+                        <label class="form-check-label" for="ramalNpossui">NÃO POSSUI</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="ramalQuanti"> QUANTIDADE</label>
+                        <input class="form" type="number" name="inlineRadioOptionsRamQ" id="ramalQuanti" value="ramalQ"
+                            disabled>
+
+                    </div>
+                </div></br>
+
+                <div>
+                    <label>SUPORTE P/ CPU </label></br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptionsSupD" id="suporteDEf"
+                            value="suporD">
+                        <label class="form-check-label" for="suporteDef">DEFEITO</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptionsSupF" id="suporteFun"
+                            value="suporF">
+                        <label class="form-check-label" for="suporteFun">Funcionando</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptionsSupN" id="suporteNpossui"
+                            value="suporN" checked>
+                        <label class="form-check-label" for="suporteNpossui">NÃO POSSUI</label>
+                    </div>
 
                 </div>
-            </div> </br>
-
-            <div>
-                <label>CPU </label></br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptionsCPUd" id="cpuDef" value="cpuD">
-                    <label class="form-check-label" for="cpuDef">DEFEITO</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptionsCPUf" id="cpuFun" value="cpuF">
-                    <label class="form-check-label" for="cpuFun">Funcionando</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptionsCPUn" id="cpuNpossui"
-                        value="cpuN" checked>
-                    <label class="form-check-label" for="cpuNpossui">NÃO POSSUI</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label" for="cpuQuanti"> QUANTIDADE</label>
-                    <input class="form" type="number" name="inlineRadioOptionsCPUq" id="cpuQuanti" value="cpuQ"
-                        disabled>
-
-                </div>
-            </div> </br>
-
-            <div>
-                <label>NOTEBOOK </label></br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptionsNotD" id="notebookDef"
-                        value="notebookDef">
-                    <label class="form-check-label" for="notebookDef">DEFEITO</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptionsNotF" id="notebookFun"
-                        value="notebookFun">
-                    <label class="form-check-label" for="notebookFun">Funcionando</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptionsNotN" id="notebookNpossui"
-                        value="notebookNpossui" checked>
-                    <label class="form-check-label" for="notebookNpossui">NÃO POSSUI</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label" for="notebookQuanti"> QUANTIDADE</label>
-                    <input class="form" type="number" name="inlineRadioOptionsNotQ" id="notebookQuanti"
-                        value="notebookQuanti" disabled>
-
-                </div>
-            </div></br>
-
-            <div>
-                <label>PERIFERICOS</label></br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptionsPerD" id="periferDef"
-                        value="perD">
-                    <label class="form-check-label" for="periferDef">DEFEITO</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptionsPerF" id="periferFun"
-                        value="perF">
-                    <label class="form-check-label" for="periferFun">Funcionando</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptionsPerN" id="periferNpossui"
-                        value="perN" checked>
-                    <label class="form-check-label" for="periferNpossui">NÃO POSSUI</label>
-                </div>
-
-            </div></br>
-
-            <div>
-                <label>RAMAL MESA </label></br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptionsRamD" id="ramalDef"
-                        value="ramalD">
-                    <label class="form-check-label" for="ramalDef">DEFEITO</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptionsRamF" id="ramalFun"
-                        value="ramalF">
-                    <label class="form-check-label" for="ramalFun">Funcionando</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptionsRamN" id="ramalNpossui"
-                        value="ramalN" checked>
-                    <label class="form-check-label" for="ramalNpossui">NÃO POSSUI</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <label class="form-check-label" for="ramalQuanti"> QUANTIDADE</label>
-                    <input class="form" type="number" name="inlineRadioOptionsRamQ" id="ramalQuanti" value="ramalQ"
-                        disabled>
-
-                </div>
-            </div></br>
-
-            <div>
-                <label>SUPORTE P/ CPU </label></br>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptionsSupD" id="suporteDEf"
-                        value="suporD">
-                    <label class="form-check-label" for="suporteDef">DEFEITO</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptionsSupF" id="suporteFun"
-                        value="suporF">
-                    <label class="form-check-label" for="suporteFun">Funcionando</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptionsSupN" id="suporteNpossui"
-                        value="suporN" checked>
-                    <label class="form-check-label" for="suporteNpossui">NÃO POSSUI</label>
-                </div>
-
             </div>
         </div>
-    </div>
-
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 </body>
 
 </html>

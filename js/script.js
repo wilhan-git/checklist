@@ -1,3 +1,5 @@
+
+
 function chamarPgForm(){
-  window.location.href ="checklist/checklist.html"
+  window.location.href="../checklist/checklist.html";
 }
