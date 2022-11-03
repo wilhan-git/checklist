@@ -1,0 +1,78 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.cabecalho, .navigation_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  
+}
+
+.cabecalho{
+    background-color: dimgrey;
+    height: 56px;
+    justify-content: space-between;
+    padding: 0 3%;
+}
+
+header .logo_img{
+    width: 150px;
+
+}
+
+.navigation_header{
+    gap: 3em;
+}
+
+.navigation_header a{
+    text-decoration: none;
+    color:white;
+    transition: 1s;
+    font-weight: bold;
+}
+.active{
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.secao_buscar_filial, .containner_fluid{
+    text-align: center;
+    padding-top: 15%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.btn_icon_header{
+    display: none;
+    background-color: transparent;
+    border:none;
+    color: white;
+    cursor:pointer;
+
+}
+
+@media screen and (max-width:768px) {
+  .btn_icon_header{
+    display: block;
+  }  
+  .navigation_header{
+    position:absolute;
+    flex-direction: column;
+    top: 0;
+    background-color: darkgray;
+    height: 100%;
+    width: 35vw;
+    padding: 16px;
+    animation-duration: 1s;
+    margin-left: -100vw;
+  }
+
+
+}
+
+@keyframes showSidebar{
+    from{margin-left: -100vw;}
+    top{margin-left: -10vw;}
+}
