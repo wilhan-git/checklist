@@ -15,7 +15,7 @@ function abrirNavBar(){
 }
 
 window.addEventListener('resize', function(event){
-  if(window.innerWidth > 768 && showSidebar){
-    abrirNavBar();
-  }
+  if(this.window.innerWidth >768 && showSidebar){
+     abrirNavBar();
+   } 
 })
