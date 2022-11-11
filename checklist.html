@@ -43,158 +43,154 @@
         </div>
     </header>
 
-    <form action="gravar.php" method="get">
-        <div class="nome-colaborador col-6">
-            <label for="nomeCola">Nome: </label></br>
-            <input type="text" name="nomeColaborador" id="colaborador"></br>
-
-        </div></br>
-
-        <div class="form-checklist">
-            <div class="container">
-                <div>
-                    <label>MONITOR </label></br>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptionsMoniD" id="monitorDef"
-                            value="optionMonitor1">
-                        <label class="form-check-label" for="monitorDef">DEFEITO</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptionsMoniF" id="monitorFun"
-                            value="optionMonitor2">
-                        <label class="form-check-label" for="monitorFun">Funcionando</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptionsMoniN" id="monitorNpossui"
-                            value="optionMonitor3" checked>
-                        <label class="form-check-label" for="monitorNpossui">NÃO POSSUI</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <label class="form-check-label" for="monitorQuanti"> QUANTIDADE</label>
-                        <input class="form" type="number" name="inlineRadioOptionsMoniQ" id="monitorQuanti"
-                            value="optionMonitor4" disabled>
-
-                    </div>
-                </div> </br>
-
-                <div>
-                    <label>CPU </label></br>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptionsCPUd" id="cpuDef"
-                            value="cpuD">
-                        <label class="form-check-label" for="cpuDef">DEFEITO</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptionsCPUf" id="cpuFun"
-                            value="cpuF">
-                        <label class="form-check-label" for="cpuFun">Funcionando</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptionsCPUn" id="cpuNpossui"
-                            value="cpuN" checked>
-                        <label class="form-check-label" for="cpuNpossui">NÃO POSSUI</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <label class="form-check-label" for="cpuQuanti"> QUANTIDADE</label>
-                        <input class="form" type="number" name="inlineRadioOptionsCPUq" id="cpuQuanti" value="cpuQ"
-                            disabled>
-
-                    </div>
-                </div> </br>
-
-                <div>
-                    <label>NOTEBOOK </label></br>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptionsNotD" id="notebookDef"
-                            value="notebookDef">
-                        <label class="form-check-label" for="notebookDef">DEFEITO</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptionsNotF" id="notebookFun"
-                            value="notebookFun">
-                        <label class="form-check-label" for="notebookFun">Funcionando</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptionsNotN" id="notebookNpossui"
-                            value="notebookNpossui" checked>
-                        <label class="form-check-label" for="notebookNpossui">NÃO POSSUI</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <label class="form-check-label" for="notebookQuanti"> QUANTIDADE</label>
-                        <input class="form" type="number" name="inlineRadioOptionsNotQ" id="notebookQuanti"
-                            value="notebookQuanti" disabled>
-
-                    </div>
-                </div></br>
-
-                <div>
-                    <label>PERIFERICOS</label></br>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptionsPerD" id="periferDef"
-                            value="perD">
-                        <label class="form-check-label" for="periferDef">DEFEITO</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptionsPerF" id="periferFun"
-                            value="perF">
-                        <label class="form-check-label" for="periferFun">Funcionando</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptionsPerN" id="periferNpossui"
-                            value="perN" checked>
-                        <label class="form-check-label" for="periferNpossui">NÃO POSSUI</label>
-                    </div>
-
-                </div></br>
-
-                <div>
-                    <label>RAMAL MESA </label></br>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptionsRamD" id="ramalDef"
-                            value="ramalD">
-                        <label class="form-check-label" for="ramalDef">DEFEITO</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptionsRamF" id="ramalFun"
-                            value="ramalF">
-                        <label class="form-check-label" for="ramalFun">Funcionando</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptionsRamN" id="ramalNpossui"
-                            value="ramalN" checked>
-                        <label class="form-check-label" for="ramalNpossui">NÃO POSSUI</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <label class="form-check-label" for="ramalQuanti"> QUANTIDADE</label>
-                        <input class="form" type="number" name="inlineRadioOptionsRamQ" id="ramalQuanti" value="ramalQ"
-                            disabled>
-
-                    </div>
-                </div></br>
-
-                <div>
-                    <label>SUPORTE P/ CPU </label></br>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptionsSupD" id="suporteDEf"
-                            value="suporD">
-                        <label class="form-check-label" for="suporteDef">DEFEITO</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptionsSupF" id="suporteFun"
-                            value="suporF">
-                        <label class="form-check-label" for="suporteFun">Funcionando</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptionsSupN" id="suporteNpossui"
-                            value="suporN" checked>
-                        <label class="form-check-label" for="suporteNpossui">NÃO POSSUI</label>
-                    </div>
-
-                </div>
+    <div class="formulario_checklist">
+        <h1>Formulario</h1>
+        <form action="" method="get">
+            <div>
+                <input type="text" placeholder="Digite seu Nome" class="inputs">
+                <span class="span_required">Nome Deve ter no minimo 3 caracter</span>
             </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-</body>
+            <!-- 
+           <textarea class="observacao" id="text_area_id" cols="25" rows="10" placeholder="Digite aqui"></textarea>
+           
+        .formulario_checklist{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-dark2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 
+
+}-->
+           <p>CPU</p>
+           <div class="box_select">
+                <div>
+                    <input type="radio" class="inputs" id="funciona_cpu" value="funciona_cpu" name="cpu" >
+                    <label for="funciona_cpu">Funcionando</label>
+                </div>
+                <div>
+                    <input type="radio" class="inputs" id="defeito_cpu" value="defeito_cpu" name="cpu">
+                    <label for="defeito_cpu">Defeito</label>
+                </div>
+                <div>
+                    <input type="radio" class="inputs" id="npossui_cpu" value="npossui_cpu" name="cpu">
+                    <label for="npossui_cpu">Não Possui</label>
+                </div>
+
+
+           </div>
+
+           <p> Monitor</p>
+        <div class="box_select">
+                <div>
+                    <input type="radio" class="inputs"  id="funciona_moni" value="funciona_moni" name="monitor">
+                    <label for="funciona_moni">Funciona</label>
+                </div>
+                <div>
+                    <input type="radio" class="inputs" id="defeito_moni" value="defeito_moni" name="monitor">
+                    <label for="defeito_moni">Defeito</label>
+                </div>
+                <div>
+                    <input type="radio" class="inputs" id="npossui_moni" value="npossui_moni" name="monitor">
+                    <label for="npossui_moni">Não Possui</label>
+                </div>
+
+           </div>
+
+          
+           <p> Perifericos</p>
+        <div class="box_select">
+                <div>
+                    <input type="radio" class="inputs" id="funciona_peri" value="funciona_peri" name="Perifericos">
+                    <label for="funciona_peri">Funciona</label>
+                </div>
+                <div>
+                    <input type="radio" class="inputs" id="defeito_peri" value="defeito_peri" name="Perifericos">
+                    <label for="defeito_peri">Defeito</label>
+                </div>
+                <div>
+                    <input type="radio" class="inputs" id="npossui_peri" value="npossui_peri" name="Perifericos">
+                    <label for="npossui_peri">Não Possui</label>
+                </div>
+
+           </div>
+
+           
+           <p> Notebook</p>
+        <div class="box_select">
+                <div>
+                    <input type="radio" class="inputs" id="funciona_not" value="funciona_not" name="Notebook">
+                    <label for="funciona_not">Funciona</label>
+                </div>
+                <div>
+                    <input type="radio" class="inputs" id="defeito_not" value="defeito_not" name="Notebook">
+                    <label for="defeito_not">Defeito</label>
+                </div>
+                <div>
+                    <input type="radio" class="inputs" id="npossui_not" value="npossui_not" name="Notebook">
+                    <label for="npossui_not">Não Possui</label>
+                </div>
+
+           </div>
+           
+           <p> All In ONE</p>
+        <div class="box_select">
+                <div>
+                    <input type="radio" class="inputs" id="funciona_all" value="funciona_all" name="AllInONE">
+                    <label for="funciona_all">Funciona</label>
+                </div>
+                <div>
+                    <input type="radio" class="inputs" id="defeito_all" value="defeito_all" name="AllInONE">
+                    <label for="defeito_all">Defeito</label>
+                </div>
+                <div>
+                    <input type="radio" class="inputs" id="npossui_all" value="npossui_all" name="AllInONE">
+                    <label for="npossui_all">Não Possui</label>
+                </div>
+
+           </div>
+
+           
+           <p> Ramal Mesa</p>
+        <div class="box_select">
+                <div>
+                    <input type="radio" class="inputs" id="funciona_ram" value="funciona_ram" name="RamalMesa">
+                    <label for="funciona_ram">Funciona</label>
+                </div>
+                <div>
+                    <input type="radio" class="inputs" id="defeito_ram" value="defeito_ram" name="RamalMesa">
+                    <label for="defeito_ram">Defeito</label>
+                </div>
+                <div>
+                    <input type="radio" class="inputs" id="npossui_ram" value="npossui_ram" name="RamalMesa">
+                    <label for="npossui_ram">Não Possui</label>
+                </div>
+
+           </div>
+           
+           <p> Suporte P/CPU</p>
+        <div class="box_select">
+                <div>
+                    <input type="radio" class="inputs" id="funciona_sup" value="funciona_sup" name="SuporteCpu">
+                    <label for="funciona_sup">Funciona</label>
+                </div>
+                <div>
+                    <input type="radio" class="inputs" id="defeito_sup" value="defeito_sup" name="SuporteCpu">
+                    <label for="defeito_sup">Defeito</label>
+                </div>
+                <div>
+                    <input type="radio" class="inputs" id="npossui_sup" value="npossui_sup" name="SuporteCpu">
+                    <label for="npossui_sup">Não Possui</label>
+                </div>
+
+                <button type="submit">Adicionar Estação</button>
+
+           </div>
+        
+        </form>
+
+    </div>
+    
+  </body>
 </html>
