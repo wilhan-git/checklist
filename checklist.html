@@ -49,9 +49,9 @@
 
     <div class="formulario_checklist">
         <h1>Formulario</h1>
-        <form action="" method="get">
+        <form id="form" action="" method="get">
             <div>
-                <input type="text" placeholder="Digite seu Nome" class="inputs">
+                <input type="text" placeholder="Digite seu Nome" class="inputs required" oninput="nameValidation()">
                 <span class="span_required">Nome Deve ter no minimo 3 caracter</span>
             </div>
             <!-- 
@@ -70,15 +70,15 @@
             <p>CPU</p>
             <div class="box_select">
                 <div>
-                    <input type="radio" class="inputs" id="funciona_cpu" value="funciona_cpu" name="cpu">
+                    <input type="radio" class="inputs required" id="funciona_cpu" value="funciona_cpu" name="cpu">
                     <label for="funciona_cpu">Funcionando</label>
                 </div>
                 <div>
-                    <input type="radio" class="inputs" id="defeito_cpu" value="defeito_cpu" name="cpu">
+                    <input type="radio" class="inputs required" id="defeito_cpu" value="defeito_cpu" name="cpu">
                     <label for="defeito_cpu">Defeito</label>
                 </div>
                 <div>
-                    <input type="radio" class="inputs" id="npossui_cpu" value="npossui_cpu" name="cpu">
+                    <input type="radio" class="inputs required" id="npossui_cpu" value="npossui_cpu" name="cpu">
                     <label for="npossui_cpu">Não Possui</label>
                 </div>
 
@@ -88,15 +88,15 @@
             <p> Monitor</p>
             <div class="box_select">
                 <div>
-                    <input type="radio" class="inputs" id="funciona_moni" value="funciona_moni" name="monitor">
+                    <input type="radio" class="inputs required" id="funciona_moni" value="funciona_moni" name="monitor">
                     <label for="funciona_moni">Funciona</label>
                 </div>
                 <div>
-                    <input type="radio" class="inputs" id="defeito_moni" value="defeito_moni" name="monitor">
+                    <input type="radio" class="inputs required" id="defeito_moni" value="defeito_moni" name="monitor">
                     <label for="defeito_moni">Defeito</label>
                 </div>
                 <div>
-                    <input type="radio" class="inputs" id="npossui_moni" value="npossui_moni" name="monitor">
+                    <input type="radio" class="inputs required" id="npossui_moni" value="npossui_moni" name="monitor">
                     <label for="npossui_moni">Não Possui</label>
                 </div>
 
@@ -106,15 +106,15 @@
             <p> Perifericos</p>
             <div class="box_select">
                 <div>
-                    <input type="radio" class="inputs" id="funciona_peri" value="funciona_peri" name="Perifericos">
+                    <input type="radio" class="inputs required" id="funciona_peri" value="funciona_peri" name="Perifericos">
                     <label for="funciona_peri">Funciona</label>
                 </div>
                 <div>
-                    <input type="radio" class="inputs" id="defeito_peri" value="defeito_peri" name="Perifericos">
+                    <input type="radio" class="inputs required" id="defeito_peri" value="defeito_peri" name="Perifericos">
                     <label for="defeito_peri">Defeito</label>
                 </div>
                 <div>
-                    <input type="radio" class="inputs" id="npossui_peri" value="npossui_peri" name="Perifericos">
+                    <input type="radio" class="inputs required" id="npossui_peri" value="npossui_peri" name="Perifericos">
                     <label for="npossui_peri">Não Possui</label>
                 </div>
 
@@ -124,15 +124,15 @@
             <p> Notebook</p>
             <div class="box_select">
                 <div>
-                    <input type="radio" class="inputs" id="funciona_not" value="funciona_not" name="Notebook">
+                    <input type="radio" class="inputs required" id="funciona_not" value="funciona_not" name="Notebook">
                     <label for="funciona_not">Funciona</label>
                 </div>
                 <div>
-                    <input type="radio" class="inputs" id="defeito_not" value="defeito_not" name="Notebook">
+                    <input type="radio" class="inputs required" id="defeito_not" value="defeito_not" name="Notebook">
                     <label for="defeito_not">Defeito</label>
                 </div>
                 <div>
-                    <input type="radio" class="inputs" id="npossui_not" value="npossui_not" name="Notebook">
+                    <input type="radio" class="inputs required" id="npossui_not" value="npossui_not" name="Notebook">
                     <label for="npossui_not">Não Possui</label>
                 </div>
 
@@ -141,15 +141,15 @@
             <p> All In ONE</p>
             <div class="box_select">
                 <div>
-                    <input type="radio" class="inputs" id="funciona_all" value="funciona_all" name="AllInONE">
+                    <input type="radio" class="inputs required" id="funciona_all" value="funciona_all" name="AllInONE">
                     <label for="funciona_all">Funciona</label>
                 </div>
                 <div>
-                    <input type="radio" class="inputs" id="defeito_all" value="defeito_all" name="AllInONE">
+                    <input type="radio" class="inputs required" id="defeito_all" value="defeito_all" name="AllInONE">
                     <label for="defeito_all">Defeito</label>
                 </div>
                 <div>
-                    <input type="radio" class="inputs" id="npossui_all" value="npossui_all" name="AllInONE">
+                    <input type="radio" class="inputs required" id="npossui_all" value="npossui_all" name="AllInONE">
                     <label for="npossui_all">Não Possui</label>
                 </div>
 
@@ -159,15 +159,15 @@
             <p> Ramal Mesa</p>
             <div class="box_select">
                 <div>
-                    <input type="radio" class="inputs" id="funciona_ram" value="funciona_ram" name="RamalMesa">
+                    <input type="radio" class="inputs required" id="funciona_ram" value="funciona_ram" name="RamalMesa">
                     <label for="funciona_ram">Funciona</label>
                 </div>
                 <div>
-                    <input type="radio" class="inputs" id="defeito_ram" value="defeito_ram" name="RamalMesa">
+                    <input type="radio" class="inputs required" id="defeito_ram" value="defeito_ram" name="RamalMesa">
                     <label for="defeito_ram">Defeito</label>
                 </div>
                 <div>
-                    <input type="radio" class="inputs" id="npossui_ram" value="npossui_ram" name="RamalMesa">
+                    <input type="radio" class="inputs required" id="npossui_ram" value="npossui_ram" name="RamalMesa">
                     <label for="npossui_ram">Não Possui</label>
                 </div>
 
@@ -176,15 +176,15 @@
             <p> Suporte P/CPU</p>
             <div class="box_select">
                 <div>
-                    <input type="radio" class="inputs" id="funciona_sup" value="funciona_sup" name="SuporteCpu">
+                    <input type="radio" class="inputs required" id="funciona_sup" value="funciona_sup" name="SuporteCpu">
                     <label for="funciona_sup">Funciona</label>
                 </div>
                 <div>
-                    <input type="radio" class="inputs" id="defeito_sup" value="defeito_sup" name="SuporteCpu">
+                    <input type="radio" class="inputs required" id="defeito_sup" value="defeito_sup" name="SuporteCpu">
                     <label for="defeito_sup">Defeito</label>
                 </div>
                 <div>
-                    <input type="radio" class="inputs" id="npossui_sup" value="npossui_sup" name="SuporteCpu">
+                    <input type="radio" class="inputs required" id="npossui_sup" value="npossui_sup" name="SuporteCpu">
                     <label for="npossui_sup">Não Possui</label>
                 </div>
 
@@ -199,5 +199,6 @@
     </div>
 
 </body>
+<script src="/js/script.js"></script>
 
 </html>

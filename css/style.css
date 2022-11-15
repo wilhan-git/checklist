@@ -166,6 +166,9 @@ h1{
 
 .span_required{
     display:none;
+    font-size: 12px;
+    color:var(--color-red);
+    margin:3px 0 0 1px;
 
 }
 p{

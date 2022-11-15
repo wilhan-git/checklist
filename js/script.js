@@ -19,3 +19,33 @@ window.addEventListener('resize', function(event){
      abrirNavBar();
    } 
 })
+
+/* Validação do Formulario*/
+
+const form = document.getElementById('form');
+const campos = document.querySelectorAll('.required');
+const spans = document.querySelectorAll('.span_required');
+/*const emailRegex = /^ w+(-+.')*/
+
+function setError(index){
+ 
+  campos[index].style.border ='2px solid #e63636';
+  spans[index].style.display ='block';
+
+
+}
+
+function removeError(index){
+  campos[index].style.border ='';
+  spans[index].style.display ='none';
+}
+
+function nameValidation(){
+  if(campos.values.length < 3){
+   setError(0);
+  } 
+  else
+  {
+    removeError();
+  }
+}
