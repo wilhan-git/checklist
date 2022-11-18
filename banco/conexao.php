@@ -1,11 +1,12 @@
 <?php
 $hostname ="localhost";
 $bancodedados = "checklist";
-$usuario ="root";
-$senha ="mwwznfsmwu2";
+$dbusuario ="root";
+$dbsenha ="mwwznfsmwu2";
 
-$mysqli =new mysqli($hostname, $usuario,$senha, $bancodedados){
+$mysqli =new mysqli($hostname, $dbusuario,$dbsenha, $bancodedados){
     if($mysqli -> connect_errno){
         echo "Falha ao conectar: (" . $mysqli->connect_errno .") " . $mysqli->connect_errno;
     }
 }
+?>
