@@ -33,8 +33,7 @@ header .logo_img{
     transition: 1s;
     font-weight: bold;
 }
-.active{
-    background-color: red;
+#active{
     padding: 10px;
     border-radius: 10px;
 }

@@ -49,3 +49,16 @@ function nameValidation(){
     removeError();
   }
 }
+
+//Função para mudar a cor da borda ao passar o mouse em cima
+var receberNav = document.getElementById('active');
+
+function acionaBorda(){
+  receberNav.style.background ='#e63636';
+}
+function acionaNborda(){
+  receberNav.style.background ='';
+}
+
+
+
